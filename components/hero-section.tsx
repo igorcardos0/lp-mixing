@@ -13,75 +13,75 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Efeito animado dourado no fundo */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Gradiente animado dourado principal - movimento mais rápido */}
+      {/* Efeito animado dourado no fundo - mais sutil */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none bg-black">
+        {/* Gradiente animado dourado principal - mais sutil */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, transparent 0%, rgba(211, 183, 131, 0.15) 25%, rgba(211, 183, 131, 0.25) 50%, rgba(211, 183, 131, 0.15) 75%, transparent 100%)",
+            background: "linear-gradient(135deg, transparent 0%, rgba(211, 183, 131, 0.05) 25%, rgba(211, 183, 131, 0.1) 50%, rgba(211, 183, 131, 0.05) 75%, transparent 100%)",
             backgroundSize: "300% 300%",
             animation: "golden-shimmer 6s ease-in-out infinite",
           }}
         />
-        {/* Segunda camada de gradiente com movimento diferente */}
+        {/* Segunda camada de gradiente com movimento diferente - mais sutil */}
         <div
-          className="absolute inset-0 opacity-70"
+          className="absolute inset-0 opacity-50"
           style={{
-            background: "linear-gradient(45deg, transparent 0%, rgba(211, 183, 131, 0.1) 30%, rgba(211, 183, 131, 0.2) 50%, rgba(211, 183, 131, 0.1) 70%, transparent 100%)",
+            background: "linear-gradient(45deg, transparent 0%, rgba(211, 183, 131, 0.03) 30%, rgba(211, 183, 131, 0.08) 50%, rgba(211, 183, 131, 0.03) 70%, transparent 100%)",
             backgroundSize: "400% 400%",
             animation: "golden-shimmer 8s ease-in-out infinite reverse",
           }}
         />
-        {/* Partículas douradas animadas flutuantes - movimento aumentado */}
+        {/* Partículas douradas animadas flutuantes - mais sutis */}
         <div
-          className="absolute top-20 left-10 sm:left-20 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/40 rounded-full blur-3xl"
+          className="absolute top-20 left-10 sm:left-20 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/15 rounded-full blur-3xl"
           style={{
             animation: "float-fast 4s ease-in-out infinite",
           }}
         />
         <div
-          className="absolute bottom-20 right-10 sm:right-20 w-72 sm:w-96 md:w-[500px] h-72 sm:h-96 md:h-[500px] bg-accent/40 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 sm:right-20 w-72 sm:w-96 md:w-[500px] h-72 sm:h-96 md:h-[500px] bg-accent/15 rounded-full blur-3xl"
           style={{
             animation: "float-slow 5s ease-in-out infinite",
             animationDelay: "1.5s",
           }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[500px] md:w-[600px] h-[400px] sm:h-[500px] md:h-[600px] bg-primary/30 rounded-full blur-3xl"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[500px] md:w-[600px] h-[400px] sm:h-[500px] md:h-[600px] bg-primary/10 rounded-full blur-3xl"
           style={{
             animation: "float-fast 6s ease-in-out infinite",
             animationDelay: "2s",
           }}
         />
-        {/* Partículas adicionais para mais movimento */}
+        {/* Partículas adicionais para mais movimento - mais sutis */}
         <div
-          className="absolute top-1/4 right-1/4 w-56 sm:w-72 md:w-80 h-56 sm:h-72 md:h-80 bg-accent/35 rounded-full blur-3xl"
+          className="absolute top-1/4 right-1/4 w-56 sm:w-72 md:w-80 h-56 sm:h-72 md:h-80 bg-accent/12 rounded-full blur-3xl"
           style={{
             animation: "float 5s ease-in-out infinite",
             animationDelay: "3.5s",
           }}
         />
         <div
-          className="absolute bottom-1/3 left-1/3 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/35 rounded-full blur-3xl"
+          className="absolute bottom-1/3 left-1/3 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/12 rounded-full blur-3xl"
           style={{
             animation: "float-slow 7s ease-in-out infinite",
             animationDelay: "1s",
           }}
         />
-        {/* Ondas douradas na parte inferior - movimento mais rápido */}
+        {/* Ondas douradas na parte inferior - mais sutis */}
         <div
           className="absolute bottom-0 left-0 right-0 h-1/2"
           style={{
-            background: "radial-gradient(ellipse 80% 50% at 50% 100%, rgba(211, 183, 131, 0.2) 0%, rgba(211, 183, 131, 0.1) 40%, transparent 70%)",
+            background: "radial-gradient(ellipse 80% 50% at 50% 100%, rgba(211, 183, 131, 0.08) 0%, rgba(211, 183, 131, 0.04) 40%, transparent 70%)",
             animation: "golden-pulse 3s ease-in-out infinite",
           }}
         />
-        {/* Brilho superior com movimento */}
+        {/* Brilho superior com movimento - mais sutil */}
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/3"
           style={{
-            background: "radial-gradient(ellipse 100% 50% at 50% 0%, rgba(211, 183, 131, 0.1) 0%, transparent 60%)",
+            background: "radial-gradient(ellipse 100% 50% at 50% 0%, rgba(211, 183, 131, 0.05) 0%, transparent 60%)",
             animation: "golden-pulse 4s ease-in-out infinite",
             animationDelay: "1s",
           }}
