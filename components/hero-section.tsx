@@ -129,7 +129,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:py-6 shadow-xl hover:shadow-2xl transition-all duration-300 group w-full sm:w-auto"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:py-6 shadow-xl hover:shadow-2xl transition-all duration-300 group w-full sm:flex-1 sm:max-w-none"
                 onClick={() =>
                   window.location.assign(
                     "/obrigado?origem=whatsapp_orcamento&from=hero",
@@ -142,7 +142,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:py-6 border-2 border-primary text-white hover:bg-primary hover:text-black transition-all duration-300 bg-black/50 backdrop-blur-sm w-full sm:w-auto"
+                className="text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:py-6 border-2 border-primary text-white hover:bg-primary hover:text-black transition-all duration-300 bg-black/50 backdrop-blur-sm w-full sm:flex-1 sm:max-w-none"
                 onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Conheça Nosso Trabalho
