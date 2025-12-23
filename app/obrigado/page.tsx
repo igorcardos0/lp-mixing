@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { CheckCircle2 } from "lucide-react"
 import Link from "next/link"
@@ -33,7 +33,7 @@ const DESTINOS: Record<
   },
 }
 
-export default function ObrigadoPage() {
+function ObrigadoContent() {
   const searchParams = useSearchParams()
   const [segundosRestantes, setSegundosRestantes] = useState(5)
 
@@ -89,6 +89,23 @@ export default function ObrigadoPage() {
         </div>
       </div>
     </main>
+  )
+}
+
+export default function ObrigadoPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/20 to-background px-4">
+        <div className="max-w-xl w-full bg-card border border-border rounded-3xl shadow-2xl p-8 md:p-10 text-center">
+          <div className="flex justify-center mb-4">
+            <div className="w-14 h-14 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+          </div>
+          <p className="text-muted-foreground">Carregando...</p>
+        </div>
+      </main>
+    }>
+      <ObrigadoContent />
+    </Suspense>
   )
 }
 
